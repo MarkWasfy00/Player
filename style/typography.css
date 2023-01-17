@@ -1,0 +1,26 @@
+@font-face {
+    font-family: greatsans200;
+    src: url("../Fonts/GeneralSans-Extralight.otf");
+    font-display: swap;
+}
+@font-face {
+    font-family: greatsans400;
+    src: url("../Fonts/GeneralSans-Regular.otf");
+    font-display: swap;
+}
+@font-face {
+    font-family: greatsans500;
+    src: url("../Fonts/GeneralSans-Medium.otf");
+    font-display: swap;
+}
+@font-face {
+    font-family: greatsans600;
+    src: url("../Fonts/GeneralSans-Semibold.otf");
+    font-display: swap;
+}
+@font-face {
+    font-family: greatsans700;
+    src: url("../Fonts/GeneralSans-Bold.otf");
+    font-display: swap;
+}
+

@@ -1,0 +1,25 @@
+[server]
+    host = "localhost"
+    port = 4444
+    password = "password"
+[folders]
+    song_folder = "output"
+    art_folder = "albumArt"
+    promo_folder = "promo"
+    log_folder = "log.csv"
+[commercial]
+    display_ad_every = 18
+[screens]
+    main_screen = "Browser"
+    next_up_screen = "next"
+[media]
+    promo_media = "promo"
+    song_media = "conmedia"
+[break]
+    break_length = 2
+[music]
+    shuffle = "on"
+[gradient]
+    from = "#6987ff"
+    to = "#a49af6"
+    angle  = 25

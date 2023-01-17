@@ -1,0 +1,185 @@
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout{
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0px)
+    }
+
+
+    50% {
+        transform: translateX(calc(70rem - 100%))
+    }
+
+    90%, 100% {
+        transform: translateX(0px)
+    }
+}
+
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+body {
+    background-attachment: fixed;
+    /* background-size: 200% 100%; */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* animation: gradient 12s ease infinite; */
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 5rem;
+}
+
+.songpic {
+    width: 38.5rem;
+    /* margin-right: 3rem; */
+}
+
+.songpic img {
+    width: 100%;
+    opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    animation: fade 1s ease forwards;
+    /* height: 39rem; */
+}
+
+.players {
+    display: flex;
+    justify-content: space-between;
+    font-family: greatsans700, sans-serif;
+    font-size: 2.4rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 57rem;
+}
+
+.box .smallbox  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 1.7rem; */
+    gap: 4rem;
+    padding: 2rem 1rem;
+}
+
+
+.box .userinput {
+    font-family: greatsans500, sans-serif;
+    font-size: 3.2rem;
+    opacity: .7;
+    text-transform: capitalize;
+}
+
+.box .artist{
+    font-family: greatsans600, sans-serif;
+    font-size: 6.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 80rem;
+    
+    /* margin-bottom: .3rem; */
+}
+
+.box marquee {
+    margin: 0;
+    padding: 0;
+    margin-bottom: -2rem;
+}
+
+.box .songname{
+    font-family: greatsans500, sans-serif;
+    font-size: 3.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 60rem;
+    opacity: .7;
+    color: #ffffff;
+}
+
+.textholder {
+    position: fixed;
+    bottom: 7.8rem;
+    left: 9.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+}
+
+.textholder .top{
+    font-family: greatsans600, sans-serif;
+    font-size: 4.4rem;
+    /* margin-bottom: -1rem; */
+}
+.textholder .bot{
+    font-family: greatsans400, sans-serif;
+    font-size: 2.4rem;
+    max-width: 65rem;
+    line-height: 3.5rem;
+    opacity: .6;
+    color: #ffffff;
+    margin-top: 0rem;
+}
+
+.logo {
+    position: fixed;
+    bottom: 9rem;
+    right: 10rem;
+    width: 26rem;
+}
+
+.logo img {
+    width: 100%;
+    
+}
+
+

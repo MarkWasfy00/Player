@@ -1,0 +1,68 @@
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout{
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+.box .nextsong {
+    color: white;
+    position: fixed;
+    opacity: 0;
+    width: 100rem;
+    top: 10rem;
+    right: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    transition: 500ms;
+}
+
+
+.nextsong .indicator {
+    font-family: greatsans400, sans-serif;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    opacity: .9;
+}
+.nextsong .songname {
+    font-family: greatsans600, sans-serif;
+    font-size: 3.2rem;
+    text-transform: capitalize;
+    margin-top: -.5rem;
+}
+.nextsong .artist {
+    font-family: greatsans600, sans-serif;
+    font-size: 3.2rem;
+    text-transform: capitalize;
+    
+}
+
