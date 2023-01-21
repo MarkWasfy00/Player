@@ -119,10 +119,10 @@ if __name__ == "__main__":
                         obs.set_music(CONFIG_V_SONG_MEDIA,music.QUEUE)
                         exited_from_promo = False
                     else:
+                        music.generate_image_url()
                         db.connect()
                         music.set_current_song_settings(db.get_first_music())
                         db.disconnect()
-                        music.generate_image_url()
                         music.set_music_html()
                         obs.connect()
                         obs.refresh_source(CONFIG_V_MAIN_SCREEN)
@@ -158,10 +158,10 @@ if __name__ == "__main__":
                     counter += 1
 
                 elif logs.count() == logs.STATION:
+                    music.generate_image_url()
                     db.connect()
                     music.set_current_song_settings(db.get_first_music())
                     db.disconnect()
-                    music.generate_image_url()
                     music.set_music_html()
                     print(f"Starting Break Song: {music.TITLE}")
 
@@ -187,10 +187,10 @@ if __name__ == "__main__":
                     music.set_promo_video(random_choice(get_promo_lists))
                     obs.connect()
                     obs.set_music(CONFIG_V_VIDEO_MEDIA,music.PROMO)       
+                    music.generate_image_url()
                     db.connect()
                     music.set_current_song_settings(db.get_first_music())
                     db.disconnect()
-                    music.generate_image_url()
                     music.set_music_html()
                     obs.connect()
                     obs.refresh_source(CONFIG_V_MAIN_SCREEN)
