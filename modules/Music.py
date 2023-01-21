@@ -45,9 +45,10 @@ class Music:
             self.QUEUE = path.join(self.SONGS_PATH,song_intry)
             self.TITLE  = audiofile.tag.title
             self.ARTIST = audiofile.tag.artist
-            self.ART = f"../placeholder/Placeholder.jpg"
+            self.ART = f"../{self.ALBUM_ART_FOLDER_NAME}/{'{0}.jpg'.format(audiofile.tag.title)}"
             self.DURATION = time.strftime("%M:%S", time.gmtime(audiofile.info.time_secs))
             self.DURATION_MS = audiofile.info.time_secs * 1000
+
         except:
             print(f"Failed to set the current song")
 
