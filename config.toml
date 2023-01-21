@@ -6,9 +6,9 @@
     song_folder = "output"
     art_folder = "albumArt"
     promo_folder = "promo"
-    log_folder = "log.csv"
+    log_folder = "C:\\Users\\mizzo\\Desktop\\obs-player"
 [commercial]
-    display_ad_every = 18
+    display_ad_every = 2
 [screens]
     main_screen = "Browser"
     next_up_screen = "next"

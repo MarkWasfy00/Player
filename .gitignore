@@ -1,0 +1,4 @@
+Lib
+pyvenv.cfg
+__pycache__
+*.db
